@@ -1,0 +1,33 @@
+.certifications__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+}
+
+.certifications__card {
+  padding: 25px;
+  text-align: center;
+}
+
+.certifications__card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.certifications__card p {
+  color: var(--text-secondary);
+}
+
+.certifications__card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+
+  .certifications__grid {
+    grid-template-columns: 1fr;
+  }
+
+}

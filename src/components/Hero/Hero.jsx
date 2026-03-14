@@ -1,16 +1,13 @@
 import profileData from "../../data/profileData";
 import "./Hero.css";
+import profileImg from "../../assets/carlos.jpg";
 
 function Hero() {
   return (
     <section id="hero" className="hero section">
       <div className="container hero__grid">
         <div className="hero__image-wrapper">
-          <img
-            src={profileData.mainImage}
-            alt={profileData.name}
-            className="hero__image"
-          />
+          <img src={profileImg} alt="Carlos Palomino" />
         </div>
 
         <div className="hero__content">

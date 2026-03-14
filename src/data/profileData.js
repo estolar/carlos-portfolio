@@ -1,5 +1,5 @@
 const profileData = {
-  name: "Carlos Palomino",
+  name: "Dr. Carlos Palomino Vidal",
   role: "Project Management • Innovation • Research",
   description:
     "Especialista en gestión de proyectos, innovación tecnológica e investigación aplicada, con una trayectoria orientada al liderazgo académico y profesional.",

@@ -1,0 +1,45 @@
+import "/ContactCard.css";
+import qr from "../../assets/qr-contact.png";
+
+export default function ContactCard() {
+  return (
+    <section className="contactCard">
+
+      <div className="contactCard__container">
+
+        <h3 className="contactCard__title">
+          Contacto
+        </h3>
+
+        <p className="contactCard__subtitle">
+          Escanea el código QR para conectar directamente
+        </p>
+
+        <div className="contactCard__qr">
+          <img src={qr} alt="QR Contacto" />
+        </div>
+
+        <div className="contactCard__actions">
+
+          <a
+            href="mailto:correo@dominio.com"
+            className="contactCard__btn primary"
+          >
+            Enviar correo
+          </a>
+
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            className="contactCard__btn secondary"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}

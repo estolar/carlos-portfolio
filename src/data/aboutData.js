@@ -8,8 +8,7 @@ const aboutData = {
     "Investigación académica",
     "Transformación digital"
   ],
-  location: "Lima, Perú",
-  image: "/images/profile-secondary.jpg"
+  location: "Lima, Perú"
 };
 
 export default aboutData;

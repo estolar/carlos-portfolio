@@ -1,45 +1,70 @@
-import "/ContactCard.css";
-import qr from "../../assets/qr-contact.png";
+.contactCard {
+  display: flex;
+  justify-content: center;
+}
 
-export default function ContactCard() {
-  return (
-    <section className="contactCard">
+.contactCard__container {
+  width: 100%;
+  max-width: 320px;
+  padding: 28px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #4f8cff, #7b61ff);
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
 
-      <div className="contactCard__container">
+.contactCard__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
 
-        <h3 className="contactCard__title">
-          Contacto
-        </h3>
+.contactCard__subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+}
 
-        <p className="contactCard__subtitle">
-          Escanea el código QR para conectar directamente
-        </p>
+.contactCard__qr img {
+  width: 190px;
+  max-width: 100%;
+  border-radius: 12px;
+  background: white;
+  padding: 8px;
+  margin: 0 auto 22px;
+  display: block;
+}
 
-        <div className="contactCard__qr">
-          <img src={qr} alt="QR Contacto" />
-        </div>
+.contactCard__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-        <div className="contactCard__actions">
+.contactCard__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
 
-          <a
-            href="mailto:correo@dominio.com"
-            className="contactCard__btn primary"
-          >
-            Enviar correo
-          </a>
+.contactCard__btn.primary {
+  background: white;
+  color: #1f2937;
+}
 
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            className="contactCard__btn secondary"
-          >
-            LinkedIn
-          </a>
+.contactCard__btn.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  color: white;
+}
 
-        </div>
-
-      </div>
-
-    </section>
-  );
+.contactCard__btn:hover {
+  transform: translateY(-2px);
 }
